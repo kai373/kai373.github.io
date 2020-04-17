@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.box {
+  background-color: #46c7d8;
+  width: 200px;
+  height: 200px;
+  display: none;
+}
+
+.box p,
+#start,
+#result {
+  cursor: pointer;
+}
+
+.box p:hover,
+#start:hover,
+#result:hover {
+  background-color: #9146d8;
+}
+
+#start {
+  background-color: #46c7d8;
+  width: 200px;
+  height: 200px;
+}
+
+#nogi {
+  width: 200px;
+  display: none;
+}
+
+#hinata {
+  width: 200px;
+  display: none;
+}
