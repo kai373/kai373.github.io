@@ -34,11 +34,24 @@ body {
 }
 
 #nogi {
-  width: 200px;
+  width: 400px;
   display: none;
 }
 
+#nogi img {
+  width: 400px;
+}
+
 #hinata {
-  width: 200px;
+  width: 400px;
+  display: none;
+}
+
+#hinata img {
+  width: 400px;
+}
+
+#zero {
+  width: 400px;
   display: none;
 }

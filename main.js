@@ -111,7 +111,9 @@ $(function () {
   });
 
   $("#result").on("click", function () {
-    if (nogi > hinata) {
+    if (nogi === 0 && hinata === 0) {
+      $("#zero").fadeIn();
+    } else if (nogi > hinata) {
       $("#nogi").fadeIn();
     } else if (nogi === hinata) {
       $("#nogi").fadeIn();
