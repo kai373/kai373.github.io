@@ -11,6 +11,11 @@
         height: 200px;
         background-color: #ebde50;
       }
+      .contain2 {
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+      }
       .kosaka {
         background-color: #f18930;
       }
@@ -21,6 +26,7 @@
   </head>
   <body>
     <div class="contain"></div>
+    <div class="contain2"></div>
 
     <div class="container">
       <div id="start">START</div>
@@ -89,7 +95,7 @@
     <script>
       if (navigator.cookieEnabled) {
         //cookie 有効
-        $(".contain").addClass("osusi");
+        $(".contain2").addClass("osusi");
       } else {
         //cookie 無効
       }
