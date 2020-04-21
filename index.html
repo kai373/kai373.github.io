@@ -98,13 +98,22 @@
     <p id="zero">あなたはアイドルが嫌いです。</p>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script>
-      if (navigator.cookieEnabled) {
-        //cookie 有効
-        $(".contain2").addClass("osusi");
-      } else {
-        //cookie 無効
-        $(".contain2").addClass("osusi2");
-      }
+      $(document).ready(function () {
+        if (
+          document.cookie.replace(
+            /(?:(?:^|.;\s)nibu\s\=\s([^;]).$)|^.*$/,
+            "$1"
+          ) !== "true"
+        ) {
+          //該当クッキーが残っていない（始めて開いた）場合の処理
+          //クッキーを半永続的に残す
+          document.cookie = "nibu=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+          //ポップアップを表示する処理
+          ////////////////////////////////////
+          $(".contain").addClass("kosaka");
+        }
+      });
     </script>
     <script src="main.js"></script>
   </body>
