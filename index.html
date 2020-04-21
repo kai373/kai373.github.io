@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       .contain {
+        position: relative;
         width: 200px;
         height: 200px;
         background-color: #ebde50;
       }
       .contain2 {
+        position: relative;
         width: 200px;
         height: 200px;
         background-color: #000;
@@ -21,6 +23,9 @@
       }
       .osusi {
         background-color: #c91f1f;
+      }
+      .osusi2 {
+        background-color: #1fc927;
       }
     </style>
   </head>
@@ -98,6 +103,7 @@
         $(".contain2").addClass("osusi");
       } else {
         //cookie 無効
+        $(".contain2").addClass("osusi2");
       }
 
       $(document).ready(function () {
