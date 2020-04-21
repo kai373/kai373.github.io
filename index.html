@@ -87,14 +87,13 @@
       $(document).ready(function () {
         if (
           document.cookie.replace(
-            /(?:(?:^|.;\s)クッキー名\s\=\s([^;]).$)|^.*$/,
+            /(?:(?:^|.;\s)nibu\s\=\s([^;]).$)|^.*$/,
             "$1"
           ) !== "true"
         ) {
           //該当クッキーが残っていない（始めて開いた）場合の処理
           //クッキーを半永続的に残す
-          document.cookie =
-            "クッキー名=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+          document.cookie = "nibu=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
           //ポップアップを表示する処理
           ////////////////////////////////////
