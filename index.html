@@ -1,292 +1,106 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>meidaisai</title>
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <!-- Place favicon.ico in the root directory -->
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,100italic,100|Pacifico|Oswald:400,700,400italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
-    />
-
-    <!-- <link rel="stylesheet" href="assets/dist/css/vendor.min.css"> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- <link type="text/css" rel="stylesheet" href="http://manato.ca/assets/dist/css/main.css?1494207797" /> -->
-    <link rel="stylesheet" href="main.css" />
   </head>
+
   <body>
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
-
-    <!-- Check to see if its device is mobile, tablet or desktop for JavaScript  -->
-    <div class="is-mobile is-tablet is-desktop"></div>
-
-    <!-- end of preloader-wrapper -->
-
-    <header class="page-header" style="display: none;">
-      <div class="row row-center">
-        <div class="span-12 span-l-8 columns">
-          <nav class="nav">
-            <ul class="menu-list">
-              <li class="home menu-item">
-                <a class="menu-link" href="home">home</a>
-              </li>
-              <li class="about menu-item">
-                <a class="menu-link" href="about">about</a>
-              </li>
-              <li class="skills menu-item">
-                <a class="menu-link" href="skills">skills</a>
-              </li>
-              <li class="works menu-item">
-                <a class="menu-link" href="works">works</a>
-              </li>
-              <li class="contact menu-item">
-                <a class="menu-link" href="contact">contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <img class="background" src="images/purebg.jpg" />
+    <div class="content">
+      <ul>
+        <li class="project-box">
+          <div class="project-heading">
+            <p class="project-name">1年生ジャグリングパフォーマンス</p>
+          </div>
+          <div class="project-content">
+            <p class="group-name">ジャグリングサークル Dietz</p>
+            <p class="genre">展示</p>
+            <p class="time">11月3日16:10～16:30</p>
+            <p class="phrase">フレッシュなパフォーマンス！</p>
+            <p class="js-modal-open btn">詳細へ</p>
+          </div>
+        </li>
+        <li class="project-box">
+          <div class="project-heading">
+            <p class="project-name">フラッシュモブ</p>
+          </div>
+          <div class="project-content">
+            <p class="group-name">フラッシュモ部</p>
+            <p class="genre">展示</p>
+            <p class="time">11月3日16:10～16:30</p>
+            <p class="phrase">笑顔の配達人！</p>
+            <p class="js-modal-open btn">詳細へ</p>
+          </div>
+        </li>
+        <li class="project-box">
+          <div class="project-heading">
+            <p class="project-name">エリアランダム</p>
+          </div>
+          <div class="project-content">
+            <p class="group-name">第135回明大祭実行委員会</p>
+            <p class="genre">展示</p>
+            <p class="time">11月3日16:10～16:30</p>
+            <p class="phrase">パフォーマンスの常識を変えたい</p>
+            <p class="js-modal-open btn">詳細へ</p>
+          </div>
+        </li>
+        <li class="project-box">
+          <div class="project-heading">
+            <p class="project-name">For the sea</p>
+          </div>
+          <div class="project-content">
+            <p class="group-name">男子チアリーディングチーム ANCHORS</p>
+            <p class="genre">展示</p>
+            <p class="time">11月3日16:10～16:30</p>
+            <p class="phrase">令和になっても男だけ。</p>
+            <p class="js-modal-open btn">詳細へ</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+      <div class="modal__content-heading">
+        <p class="modal__project-name"></p>
       </div>
-    </header>
-    <!-- end of page-header -->
-
-    <div class="main-bg"></div>
-    <section
-      class="hero-area js-section"
-      data-section="home"
-      data-bg-color="rgb(252, 252, 252)"
-    >
-      <div class="hero-area-wrapper">
-        <div class="row row-center">
-          <div class="span-l-12 columns">
-            <h2
-              class="hero-title"
-              style="color: rgb(246, 171, 73); font-family: sans-serif;"
-            >
-              第136回明大祭
-            </h2>
-            <!-- <p class="hero-desc">Web Developer & Designer</p> -->
-          </div>
-        </div>
+      <div class="modal__content">
+        <p class="modal__group-name"></p>
+        <p class="modal__genre"></p>
+        <p class="modal__time"></p>
+        <p class="modal__phrase"></p>
+        <a class="js-modal-close" href="">閉じる</a>
       </div>
-
-      <div class="hero-area-field"></div>
-    </section>
-    <!-- end of hero-area -->
-
-    <main class="page-content">
-      <!-- section-about -->
-      <section
-        class="section section-about js-section"
-        data-section="about"
-        data-bg-color="rgb(105, 194, 238)"
-      >
-        <div class="row row-center">
-          <div class="span-12 span-l-12 columns">
-            <h3 class="section-title">NEWS</h3>
-          </div>
-        </div>
-
-        <!-- <div class="row row-center">
-          <div class="columns span-12 span-l-8 span-ll-8">
-            <div class="about-para-wrapper">
-              <p class="about-para">
-                Hi I am a web developer & designer based in Vancouver in Canada.
-                I believe working in a multi-disciplined approach brings
-                creative inspiration to my work. I am passionate about creating
-                websites and web apps that incorporate interactive design and
-                modern technologies. I specialize in front-end development but
-                also love experimenting with new backend technologies, with the
-                aim to improve productivity, quality, performance and speed.
-              </p>
-            </div>
-          </div>
-        </div> -->
-      </section>
-      <!-- end of section-about -->
-
-      <!-- section-skills -->
-      <section
-        class="section section-skills scroll-list js-section"
-        data-animation="setSkillBar"
-        data-section="skills"
-        data-bg-color="rgb(177, 221, 92)"
-      >
-        <div class="row row-center">
-          <div class="span-8 columns">
-            <h3 class="section-title">TOPICS</h3>
-          </div>
-        </div>
-
-        <!-- <div class="row section-skills-wrapper">
-          <div class="span-6 columns">
-            <h3 class="section-skills-heading">BACKEND Skills</h3>
-
-            <div class="section-skills-skill-innder">
-              <div class="skill-bar-wrapper">
-                <div class="skill-bar-desc skill-bar-desc-right">
-                  <span>PHP</span>
-                </div>
-
-                <div class="skill-bar-box">
-                  <span class="skill-bar-num skill-bar-num-right"></span>
-                  <span
-                    class="skill-bar skill-bar-right js-skill-bar"
-                    data-percentage="90"
-                  ></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="span-6 columns">
-            <h3 class="section-skills-heading">Frontend Skills</h3>
-
-            <div class="section-skills-skill-innder">
-              <div class="skill-bar-wrapper">
-                <div class="skill-bar-desc skill-bar-desc-left">
-                  <span>Three.js</span>
-                </div>
-
-                <div class="skill-bar-box">
-                  <span class="skill-bar-num skill-bar-num-left"></span>
-                  <span
-                    class="skill-bar skill-bar-left js-skill-bar"
-                    data-percentage="50"
-                  ></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="section-skills-divider"></div>
-
-          <div class="span-12 columns">
-            <div class="tools">
-              <div class="tool"></div>
-            </div>
-          </div>
-        </div> -->
-      </section>
-
-      <!-- section-works -->
-      <section
-        class="section section-works js-section"
-        data-section="works"
-        data-bg-color="rgb(252, 252, 252)"
-      >
-        <!-- <div class="row row-center">
-          <div class="span-8 columns">
-            <h3 class="section-title section-skills-title section-title-darker">
-              FOOTER
-            </h3>
-          </div>
-        </div> -->
-
-        <!-- Work List -->
-        <!-- <div class="works-lists">
-          <div class="row">
-            <div
-              class="span-12 medium-3 span-l-4 columns work-list scroll-list scroll-list-hide"
-              data-animation="fade-in"
-              data-work-list-id="0"
-            >
-              <img
-                class="work-img"
-                alt="wwm"
-                src="http://manato.ca/assets/dist/img/works/wwm/wwm_thumb.jpg?1494207797"
-              />
-            </div>
-
-            <div
-              class="span-12 medium-3 span-l-4 columns work-list scroll-list scroll-list-hide"
-              data-animation="fade-in"
-              data-work-list-id="1"
-            >
-              <img
-                class="work-img"
-                alt="Think W Web Development"
-                src="http://manato.ca/assets/dist/img/works/thinkw/thinkw_thumb.jpg?1494207797"
-              />
-
-            </div>
-          </div>
-        </div> -->
-      </section>
-      <!-- end of section-works -->
-
-      <!-- section-contact -->
-      <!-- <section
-        class="section section-contact js-section"
-        data-section="contact"
-        data-bg-color="rgb(0, 0, 76)"
-      >
-        <div class="row row-center">
-          <div class="span-8 columns">
-            <h3 class="section-title">Contact Me</h3>
-          </div>
-        </div>
-
-        <div class="row row-center">
-          <div class="span-8 span-l-6 columns">
-            <div class="section-contact-para-wrapper">
-              <p class="section-contact-para">
-                If you are interested in working with me, please feel free to
-                contact me and just say hi, then get in touch.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-    </main>
-    <!-- end of page-content -->
-
-    <!-- Modal -->
-
-    <!-- <script type="text/javascript">
-      // @see http://paulirish.com/2011/requestanimationframe-for-smart-animating/
-      window.requestAnimFrame = (function () {
-        return (
-          window.requestAnimationFrame ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame ||
-          window.oRequestAnimationFrame ||
-          window.msRequestAnimationFrame ||
-          function (/* function */ callback, /* DOMElement */ element) {
-            window.setTimeout(callback, 1000 / 60);
-          }
-        );
-      })();
-    </script> -->
-
-    <!-- Vendor JavaScript -->
-    <!-- <script src="assets/dist/js/vendor.min.js"></script> -->
-    <!-- <script src="./index.js"></script> -->
-
-    <!-- Main JavaScript -->
-    <!-- <script type="text/javascript" src="http://manato.ca/assets/dist/js/bundle.js?1494207798"></script> -->
-    <!-- <script src="./main.js"></script> -->
-    <!-- <script src="./jquery.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <!-- <script src="./underscore.js"></script> -->
-    <!-- <script src="./lightslider.js"></script> -->
-    <script src="./require.js"></script>
-    <!-- <script src="./animate_icon.js"></script> -->
-    <script src="./simple2.js"></script>
+      <!--modal__inner-->
+    </div>
+    <!--modal-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".js-modal-open").on("click", function () {
+          let project_name = $(this)
+            .parents(".project-box")
+            .find(".project-name")
+            .text();
+          let group_name = $(this).prev().prev().prev().prev().text();
+          let genre = $(this).prev().prev().prev().text();
+          let time = $(this).prev().prev().text();
+          let phrase = $(this).prev().text();
+          $(".modal__content-heading .modal__project-name").text(project_name);
+          $(".modal__content .modal__group-name").text(group_name);
+          $(".modal__content .modal__genre").text(genre);
+          $(".modal__content .modal__time").text(time);
+          $(".modal__content .modal__phrase").text(phrase);
+          $(".js-modal").fadeIn();
+          return false;
+        });
+        $(".js-modal-close").on("click", function () {
+          $(".js-modal").fadeOut();
+          return false;
+        });
+      });
+    </script>
   </body>
 </html>
